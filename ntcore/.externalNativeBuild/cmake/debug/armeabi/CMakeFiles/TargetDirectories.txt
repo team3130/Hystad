@@ -1,0 +1,3 @@
+C:/Users/Eastan/Documents/GitHub/Hystad/ntcore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/ntcore.dir
+C:/Users/Eastan/Documents/GitHub/Hystad/ntcore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/edit_cache.dir
+C:/Users/Eastan/Documents/GitHub/Hystad/ntcore/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/rebuild_cache.dir
