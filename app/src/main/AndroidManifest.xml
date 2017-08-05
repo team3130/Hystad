@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.team254.cheezdroid"
+    package="com.team3130.vision3130"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -37,7 +37,7 @@
             android:configChanges="keyboardHidden|orientation" />
 
         <receiver
-            android:name=".ChezyDeviceAdminReceiver"
+            android:name=".ErrorsDeviceAdminReceiver"
             android:description="@string/device_admin_description"
             android:label="@string/device_admin_label"
             android:permission="android.permission.BIND_DEVICE_ADMIN">

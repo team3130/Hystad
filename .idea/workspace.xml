@@ -6,7 +6,216 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90fb7b73-1a1c-4efe-a2bd-7871ce42d0c0" name="Default" comment="" />
+    <list default="true" id="90fb7b73-1a1c-4efe-a2bd-7871ce42d0c0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/team254/cheezdroid/comm/RobotConnection$ReadThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/team254/cheezdroid/comm/RobotConnection$WriteThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/team254/cheezdroid/comm/RobotConnection$ReadThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/team254/cheezdroid/comm/RobotConnection$WriteThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/team254/cheezdroid/comm/RobotConnection$ReadThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/team254/cheezdroid/comm/RobotConnection$WriteThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/team254/cheezdroid/comm/RobotConnection$ReadThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/team254/cheezdroid/comm/RobotConnection$WriteThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/classes.jar_ah06iwatkd79y6rsncs9f1n4k/android/support/v4/app/NotificationCompat$CarExtender$UnreadConversation$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/classes.jar_ah06iwatkd79y6rsncs9f1n4k/android/support/v4/app/NotificationCompat$CarExtender$UnreadConversation$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/classes.jar_ah06iwatkd79y6rsncs9f1n4k/android/support/v4/app/NotificationCompat$CarExtender$UnreadConversation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/classes.jar_ah06iwatkd79y6rsncs9f1n4k/android/support/v4/app/NotificationCompat$NotificationCompatImplGingerbread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/classes.jar_ah06iwatkd79y6rsncs9f1n4k/android/support/v4/app/ShareCompat$IntentReader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/classes.jar_ah06iwatkd79y6rsncs9f1n4k/android/support/v4/net/ConnectivityManagerCompat$GingerbreadConnectivityManagerCompatImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/classes.jar_ah06iwatkd79y6rsncs9f1n4k/android/support/v4/view/MotionEventCompat$GingerbreadMotionEventVersionImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/classes.jar_ah06iwatkd79y6rsncs9f1n4k/android/support/v4/widget/PopupWindowCompat$GingerbreadPopupWindowImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/classes.jar_ah06iwatkd79y6rsncs9f1n4k/android/support/v4/widget/ScrollerCompat$ScrollerCompatImplGingerbread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/internal_impl-23.1.0.jar_1trxdss99fi1meirn32uwim02/android/support/v4/app/NotificationCompatBase$UnreadConversation$Factory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/internal_impl-23.1.0.jar_1trxdss99fi1meirn32uwim02/android/support/v4/app/NotificationCompatBase$UnreadConversation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/internal_impl-23.1.0.jar_1trxdss99fi1meirn32uwim02/android/support/v4/app/NotificationCompatGingerbread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/internal_impl-23.1.0.jar_1trxdss99fi1meirn32uwim02/android/support/v4/content/EditorCompatGingerbread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/internal_impl-23.1.0.jar_1trxdss99fi1meirn32uwim02/android/support/v4/net/ConnectivityManagerCompatGingerbread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/internal_impl-23.1.0.jar_1trxdss99fi1meirn32uwim02/android/support/v4/view/MotionEventCompatGingerbread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/internal_impl-23.1.0.jar_1trxdss99fi1meirn32uwim02/android/support/v4/view/ViewCompatGingerbread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/internal_impl-23.1.0.jar_1trxdss99fi1meirn32uwim02/android/support/v4/widget/PopupWindowCompatGingerbread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/internal_impl-23.1.0.jar_1trxdss99fi1meirn32uwim02/android/support/v4/widget/ScrollerCompatGingerbread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/support-annotations-23.1.0.jar_3oev8bnxde91z92d05f2xiljr/android/support/annotation/BinderThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/support-annotations-23.1.0.jar_3oev8bnxde91z92d05f2xiljr/android/support/annotation/MainThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/support-annotations-23.1.0.jar_3oev8bnxde91z92d05f2xiljr/android/support/annotation/RequiresPermission$Read.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/support-annotations-23.1.0.jar_3oev8bnxde91z92d05f2xiljr/android/support/annotation/UiThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/support-annotations-23.1.0.jar_3oev8bnxde91z92d05f2xiljr/android/support/annotation/WorkerThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/buildConfig/release/org/opencv/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/r/release/org/opencv/R.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/default/R.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/default/classes.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$3$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/Camera2Renderer$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/Camera2Renderer$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/Camera2Renderer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$CvCameraViewFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$CvCameraViewListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$CvCameraViewListener2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$CvCameraViewListenerAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$ListItemAccessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/CameraGLRendererBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/CameraGLSurfaceView$CameraTextureListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/CameraGLSurfaceView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/CameraRenderer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/FpsMeter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/InstallCallbackInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/JavaCameraView$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/JavaCameraView$CameraWorker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/JavaCameraView$JavaCameraFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/JavaCameraView$JavaCameraSizeAccessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/JavaCameraView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/LoaderCallbackInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/OpenCVLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/StaticHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/android/Utils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/calib3d/Calib3d.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/calib3d/StereoBM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/calib3d/StereoMatcher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/calib3d/StereoSGBM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/Algorithm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/Core$MinMaxLocResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/Core.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/CvException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/CvType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/DMatch.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/KeyPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/Mat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/MatOfByte.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/MatOfDMatch.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/MatOfDouble.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/MatOfFloat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/MatOfFloat4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/MatOfFloat6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/MatOfInt.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/MatOfInt4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/MatOfKeyPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/MatOfPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/MatOfPoint2f.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/MatOfPoint3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/MatOfPoint3f.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/MatOfRect.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/Point.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/Point3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/Range.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/Rect.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/RotatedRect.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/Scalar.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/Size.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/core/TermCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/engine/OpenCVEngineInterface$Stub$Proxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/engine/OpenCVEngineInterface$Stub.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/engine/OpenCVEngineInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/features2d/DescriptorExtractor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/features2d/DescriptorMatcher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/features2d/FeatureDetector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/features2d/Features2d.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/imgcodecs/Imgcodecs.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/imgproc/CLAHE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/imgproc/Imgproc.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/imgproc/LineSegmentDetector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/imgproc/Moments.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/imgproc/Subdiv2D.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/ml/ANN_MLP.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/ml/Boost.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/ml/DTrees.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/ml/EM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/ml/KNearest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/ml/LogisticRegression.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/ml/Ml.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/ml/NormalBayesClassifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/ml/RTrees.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/ml/SVM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/ml/StatModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/ml/TrainData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/objdetect/BaseCascadeClassifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/objdetect/CascadeClassifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/objdetect/HOGDescriptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/objdetect/Objdetect.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/photo/AlignExposures.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/photo/AlignMTB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/photo/CalibrateCRF.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/photo/CalibrateDebevec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/photo/CalibrateRobertson.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/photo/MergeDebevec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/photo/MergeExposures.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/photo/MergeMertens.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/photo/MergeRobertson.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/photo/Photo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/photo/Tonemap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/photo/TonemapDrago.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/photo/TonemapDurand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/photo/TonemapMantiuk.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/photo/TonemapReinhard.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/utils/Converters.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/video/BackgroundSubtractor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/video/BackgroundSubtractorKNN.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/video/BackgroundSubtractorMOG2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/video/DenseOpticalFlow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/video/DualTVL1OpticalFlow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/video/KalmanFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/video/Video.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/videoio/VideoCapture.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/videoio/VideoWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/release/org/opencv/videoio/Videoio.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental-safeguard/release/tag.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_openCVLibrary310_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_openCVLibrary310_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_openCVLibrary310_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_openCVLibrary310_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_openCVLibrary310_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_openCVLibrary310_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_openCVLibrary310_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_openCVLibrary310_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/compileDebugAidl/dependency.store" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/compileDebugAidl/dependency.store" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/compileReleaseAidl/dependency.store" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/compileReleaseAidl/dependency.store" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/outputs/aar/openCVLibrary310-debug.aar" afterPath="$PROJECT_DIR$/openCVLibrary310/build/outputs/aar/openCVLibrary310-debug.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/outputs/aar/openCVLibrary310-release.aar" afterPath="$PROJECT_DIR$/openCVLibrary310/build/outputs/aar/openCVLibrary310-release.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/aidl/debug/org/opencv/engine/OpenCVEngineInterface.java" afterPath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/aidl/debug/org/opencv/engine/OpenCVEngineInterface.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/aidl/release/org/opencv/engine/OpenCVEngineInterface.java" afterPath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/aidl/release/org/opencv/engine/OpenCVEngineInterface.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/blame/res/androidTest/debug/multi/values.json" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/blame/res/androidTest/debug/multi/values.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeReleaseAssets/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeReleaseShaders/merger.xml" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeReleaseShaders/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/packageDebugResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/packageReleaseResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/openCVLibrary310.iml" afterPath="$PROJECT_DIR$/openCVLibrary310/openCVLibrary310.iml" />
+    </list>
     <ignored path="vision_app.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,71 +242,16 @@
     </system>
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="vision_app" />
+    <favorites_list name="Hystad" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="90" selection-start-line="46" selection-start-column="90" selection-end-line="46" selection-end-column="90" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BetterCamera2Renderer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/opencv/android/BetterCamera2Renderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Preferences.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team254/cheezdroid/Preferences.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SurfaceTexture.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-23/android.jar!/android/graphics/SurfaceTexture.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Handler.class" pinned="false" current-in-tab="true">
-        <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-23/android.jar!/android/os/Handler.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="108" column="70" selection-start-line="108" selection-start-column="70" selection-end-line="108" selection-end-column="70" />
-              <folding>
-                <element signature="e#2443#2444#0" expanded="true" />
-                <element signature="e#2494#2495#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -123,14 +277,14 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="vision_app" />
+              <option name="name" value="Hystad" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="vision_app" />
+                <option name="name" value="Hystad" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
@@ -156,7 +310,7 @@
                 <option name="name" value="mergeDebugProguardFiles" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'vision_app'." />
+                <option name="description" value="Displays the sub-projects of root project 'Hystad'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
@@ -212,7 +366,7 @@
                 <option name="name" value="assembleDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'vision_app'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'Hystad'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
@@ -222,7 +376,7 @@
                 <option name="name" value="mockableAndroidJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'vision_app' (some of the displayed tasks may belong to subprojects)." />
+                <option name="description" value="Displays the tasks runnable from root project 'Hystad' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
@@ -253,7 +407,7 @@
                 <option name="name" value="deviceCheck" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'vision_app'." />
+                <option name="description" value="Displays all dependencies declared in root project 'Hystad'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
@@ -326,7 +480,7 @@
                 <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'vision_app'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'Hystad'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
@@ -455,7 +609,7 @@
                 <option name="name" value="uninstallDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'vision_app'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'Hystad'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -768,12 +922,12 @@
                 <option name="name" value="generateDebugAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'vision_app'. [incubating]" />
+                <option name="description" value="Displays the dependent components of components in root project 'Hystad'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'vision_app'." />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'Hystad'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
@@ -899,7 +1053,7 @@
                 <option name="name" value="generateReleaseResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'vision_app'." />
+                <option name="description" value="Displays the properties of root project 'Hystad'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
@@ -2250,7 +2404,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="C:\Users\Eastan\Documents\GitHub\vision_app" value="6007214234327" />
+        <entry key="C:\Users\Eastan\Documents\GitHub\Hystad" value="6007595395088" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2538,7 +2692,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="app" />
+              <option name="name" value="Hystad" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.3-all/55gk2rcmfc6p2dg9u9ohc3hw9/gradle-3.3/src/announce" />
@@ -2693,6 +2847,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/team3130/vision3130/VisionTrackerActivity.java" />
       </list>
     </option>
   </component>
@@ -2727,89 +2883,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vision_app" />
+              <option name="myItemId" value="Hystad" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vision_app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vision_app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vision_app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vision_app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vision_app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane" />
     </panes>
   </component>
@@ -3031,19 +3117,19 @@
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.49701494" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.4904051" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.50298506" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.50298506" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.49701494" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.49253732" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3997773" sideWeight="0.50373137" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17857143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32850778" sideWeight="0.5074627" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17857143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -3075,6 +3161,20 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-23/android.jar!/android/graphics/SurfaceTexture.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-23/android.jar!/android/os/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="108" column="70" selection-start-line="108" selection-start-column="70" selection-end-line="108" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3087,7 +3187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="46" column="90" selection-start-line="46" selection-start-column="90" selection-end-line="46" selection-end-column="90" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3095,17 +3194,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team254/cheezdroid/Preferences.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team3130/vision3130/Preferences.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-23/android.jar!/android/graphics/SurfaceTexture.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-23/android.jar!/android/os/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="108" column="70" selection-start-line="108" selection-start-column="70" selection-end-line="108" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -3121,7 +3230,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="46" column="90" selection-start-line="46" selection-start-column="90" selection-end-line="46" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/opencv/android/BetterCamera2Renderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team3130/vision3130/Preferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="90" selection-start-line="46" selection-start-column="90" selection-end-line="46" selection-end-column="90" />
         </state>
       </provider>
     </entry>
@@ -3129,17 +3266,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team254/cheezdroid/Preferences.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team3130/vision3130/Preferences.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3155,7 +3288,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="46" column="90" selection-start-line="46" selection-start-column="90" selection-end-line="46" selection-end-column="90" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3178,19 +3310,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team254/cheezdroid/MjpgServer.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team3130/vision3130/MjpgServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2549">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
@@ -3204,71 +3327,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="90" selection-start-line="46" selection-start-column="90" selection-end-line="46" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/opencv/android/BetterCamera2Renderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team254/cheezdroid/VisionTrackerActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7216">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team254/cheezdroid/SelfieActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team3130/vision3130/SelfieActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team254/cheezdroid/RobotEventListener.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team3130/vision3130/RobotEventListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team254/cheezdroid/NativePart.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team3130/vision3130/NativePart.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team254/cheezdroid/Preferences.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team3130/vision3130/Preferences.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
+        <state relative-caret-position="68">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-23/android.jar!/android/graphics/SurfaceTexture.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
+        <state relative-caret-position="901">
           <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3276,9 +3366,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding>
-            <element signature="e#717#718#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3286,7 +3373,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
@@ -3297,7 +3383,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
@@ -3308,7 +3393,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
@@ -3317,12 +3401,108 @@
     </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-23/android.jar!/android/os/Handler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
+        <state relative-caret-position="1309">
           <caret line="108" column="70" selection-start-line="108" selection-start-column="70" selection-end-line="108" selection-end-column="70" />
-          <folding>
-            <element signature="e#2443#2444#0" expanded="true" />
-            <element signature="e#2494#2495#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team3130/vision3130/ErrorsDeviceAdminReceiver.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/team3130/vision3130/VisionTrackerActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="503" column="51" selection-start-line="503" selection-start-column="51" selection-end-line="503" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/opencv/android/BetterCamera2Renderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/vision_mode.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/vision_mode_2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/battery.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/locked.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/popup_show.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/popup_hide.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="90" selection-start-line="46" selection-start-column="90" selection-end-line="46" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/hsv_bottom_sheet.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/vision3130.png" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
