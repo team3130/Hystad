@@ -1,5 +1,0 @@
-# ninja log v5
-1	2522	0	CMakeFiles/app-native.dir/src/main/cpp/AppNative.cpp.o	1da291ca86a7d04
-2524	3081	0	../../../../build/intermediates/cmake/release/obj/armeabi/libapp-native.so	c99e7ff34f76154f
-3	6036	0	CMakeFiles/app-native.dir/src/main/cpp/AppNative.cpp.o	1da291ca86a7d04
-6036	6997	0	../../../../build/intermediates/cmake/release/obj/armeabi/libapp-native.so	c99e7ff34f76154f

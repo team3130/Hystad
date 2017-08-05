@@ -1,2 +1,2 @@
-include ':app', ':ntcore', ':ntcore', ':app-native'
+include ':app', ':'
 include ':openCVLibrary310'

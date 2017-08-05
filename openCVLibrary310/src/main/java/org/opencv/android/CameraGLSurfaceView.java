@@ -49,10 +49,7 @@ public class CameraGLSurfaceView extends GLSurfaceView {
         int cameraIndex = styledAttrs.getInt(R.styleable.CameraBridgeViewBase_camera_id, -1);
         styledAttrs.recycle();
 
-        if(android.os.Build.VERSION.SDK_INT >= 21)
-            mRenderer = new Camera2Renderer(this);
-        else
-            mRenderer = new CameraRenderer(this);
+        mRenderer = new Camera2Renderer(this);
 
         setCameraIndex(cameraIndex);
 

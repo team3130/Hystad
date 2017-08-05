@@ -1,3 +1,0 @@
-C:/Users/Eastan/Documents/GitHub/Hystad/app-native/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
-C:/Users/Eastan/Documents/GitHub/Hystad/app-native/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/app-native.dir
-C:/Users/Eastan/Documents/GitHub/Hystad/app-native/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
