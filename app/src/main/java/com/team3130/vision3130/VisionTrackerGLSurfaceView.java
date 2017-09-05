@@ -47,7 +47,7 @@ public class VisionTrackerGLSurfaceView extends BetterCameraGLSurfaceView implem
         settings.camera_settings.put(CaptureRequest.CONTROL_MODE, CaptureRequest.CONTROL_MODE_OFF);
         settings.camera_settings.put(CaptureRequest.CONTROL_VIDEO_STABILIZATION_MODE, CaptureRequest.CONTROL_VIDEO_STABILIZATION_MODE_OFF);
         settings.camera_settings.put(CaptureRequest.LENS_OPTICAL_STABILIZATION_MODE, CaptureRequest.LENS_OPTICAL_STABILIZATION_MODE_OFF);
-        settings.camera_settings.put(CaptureRequest.SENSOR_EXPOSURE_TIME, 10000000L); //Originally 1000000L (nanoseconds), increased to 10000000L
+        settings.camera_settings.put(CaptureRequest.SENSOR_EXPOSURE_TIME, 20000000L); // Originally 1000000L (nanoseconds), increased to 10000000L.  30000000L is too high, looses target detection
         settings.camera_settings.put(CaptureRequest.LENS_FOCUS_DISTANCE, .2f);
         return settings;
     }
@@ -128,6 +128,7 @@ public class VisionTrackerGLSurfaceView extends BetterCameraGLSurfaceView implem
         Pair<Integer, Integer> hRange = m_prefs != null ? m_prefs.getThresholdHRange() : blankPair();
         Pair<Integer, Integer> sRange = m_prefs != null ? m_prefs.getThresholdSRange() : blankPair();
         Pair<Integer, Integer> vRange = m_prefs != null ? m_prefs.getThresholdVRange() : blankPair();
+        // get any targets in this frame into targetsInfo
         NativePart.processFrame(texIn, texOut, width, height, procMode, hRange.first, hRange.second,
                 sRange.first, sRange.second, vRange.first, vRange.second, targetsInfo);
 
@@ -147,6 +148,7 @@ public class VisionTrackerGLSurfaceView extends BetterCameraGLSurfaceView implem
         if (mRobotConnection != null) {
             TargetUpdateMessage update = new TargetUpdateMessage(visionUpdate, System.nanoTime());
             mRobotConnection.send(update);
+            // todo:  send a debug data message back for logging on roboRIO.
         }
         return true;
     }

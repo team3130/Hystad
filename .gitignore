@@ -12,6 +12,8 @@ ehthumbs.db
 # Java class files
 *.class
 
+#Binaries
+*.bin
 
 # Generated files
 bin/
@@ -42,4 +44,9 @@ app/src/main/libs
 app/src/main/obj
 app/build
 
-/.idea/
+.idea/
+
+app/app.iml
+
+*.aar
+*.properties

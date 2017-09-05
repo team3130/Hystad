@@ -17,21 +17,28 @@ enum DisplayMode {
   DISP_MODE_TARGETS = 2,
   DISP_MODE_TARGETS_PLUS = 3
 };
-
+enum RejectCode {
+    NOT_REJECTED = 0,
+    REJECT_SIZE = 1,
+    REJECT_SHAPE = 2,
+    REJECT_FULLNESS = 3
+};
 struct TargetInfo {
   double centroid_x;
   double centroid_y;
   double width;
   double height;
   std::vector<cv::Point> points;
+  RejectCode rejectCode;
 };
-
+// =============================================================================================
 std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
                                     int h_min, int h_max, int s_min, int s_max,
                                     int v_min, int v_max) {
   LOGD("Image is %d x %d", w, h);
   LOGD("H %d-%d S %d-%d V %d-%d", h_min, h_max, s_min, s_max, v_min, v_max);
   int64_t t;
+  RejectCode rejectType = NOT_REJECTED;  // 0 no reject, 1 size, 2 shape, 3 fullness
 
   static cv::Mat input;
   input.create(h, w, CV_8UC4);
@@ -65,12 +72,13 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
   cv::findContours(contour_input, contours, cv::RETR_EXTERNAL,
                    cv::CHAIN_APPROX_TC89_KCOS);
   for (auto &contour : contours) {
-    convex_contour.clear();
-    cv::convexHull(contour, convex_contour, false);
+    //convex_contour.clear();
+    //cv::convexHull(contour, convex_contour, false);
     poly.clear();
-    cv::approxPolyDP(convex_contour, poly, 20, true);
-    if (poly.size() == 4 && cv::isContourConvex(poly)) {
+    cv::approxPolyDP(contour, poly, 20, true);
+    if ( poly.size() <= 6 && poly.size() >= 3 && cv::isContourConvex(poly)) {
       TargetInfo target;
+      target.rejectCode = NOT_REJECTED;
       int min_x = std::numeric_limits<int>::max();
       int max_x = std::numeric_limits<int>::min();
       int min_y = std::numeric_limits<int>::max();
@@ -97,20 +105,21 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
 
       // Filter based on size
       // Keep in mind width/height are in imager terms...
-      const double kMinTargetWidth = 20;
-      const double kMaxTargetWidth = 300;
-      const double kMinTargetHeight = 10;
-      const double kMaxTargetHeight = 100;
+      const double kMinTargetWidth = 15;        // 2016 target was: 20
+      const double kMaxTargetWidth = 300;       // 2016 target was: 300
+      const double kMinTargetHeight = 8;        // 2016 target was: 10
+      const double kMaxTargetHeight = 100;      // 2016 target was: 100
       if (target.width < kMinTargetWidth || target.width > kMaxTargetWidth ||
           target.height < kMinTargetHeight ||
           target.height > kMaxTargetHeight) {
         LOGD("Rejecting target due to size");
+        target.rejectCode = REJECT_SIZE;
         rejected_targets.push_back(std::move(target));
         continue;
       }
       // Filter based on shape
       const double kNearlyHorizontalSlope = 1 / 1.25;
-      const double kNearlyVerticalSlope = 1.25;
+      const double kNearlyVerticalSlope = 1.0;     // was 1.25
       int num_nearly_horizontal_slope = 0;
       int num_nearly_vertical_slope = 0;
       bool last_edge_vertical = false;
@@ -135,21 +144,24 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
       }
       if (num_nearly_horizontal_slope != 2 && num_nearly_vertical_slope != 2) {
         LOGD("Rejecting target due to shape");
+        target.rejectCode = REJECT_SHAPE;
         rejected_targets.push_back(std::move(target));
         continue;
       }
+      /*
       // Filter based on fullness
-      const double kMinFullness = .2;
-      const double kMaxFullness = .5;
+      const double kMinFullness = .2; // 2016 value: .2
+      const double kMaxFullness = .5; // 2016 value: .5
       double original_contour_area = cv::contourArea(contour);
       double poly_area = cv::contourArea(poly);
       double fullness = original_contour_area / poly_area;
       if (fullness < kMinFullness || fullness > kMaxFullness) {
         LOGD("Rejected target due to fullness");
+        target.rejectCode = REJECT_FULLNESS;
         rejected_targets.push_back(std::move(target));
         continue;
       }
-
+        */
       // We found a target
       LOGD("Found target at %.2lf, %.2lf...size %.2lf, %.2lf",
            target.centroid_x, target.centroid_y, target.width, target.height);
@@ -167,16 +179,26 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
     cv::cvtColor(thresh, vis, CV_GRAY2RGBA);
   } else {
     vis = input;
-    // Render the targets
+    // Render the targets in Errors 3130 color
     for (auto &target : targets) {
-      cv::polylines(vis, target.points, true, cv::Scalar(0, 112, 255), 3);
+      cv::polylines(vis, target.points, true, cv::Scalar(247, 211, 7), 3);
       cv::circle(vis, cv::Point(target.centroid_x, target.centroid_y), 5,
-                 cv::Scalar(0, 112, 255), 3);
+                 cv::Scalar(247, 211, 7), 3);
     }
   }
   if (mode == DISP_MODE_TARGETS_PLUS) {
     for (auto &target : rejected_targets) {
-      cv::polylines(vis, target.points, true, cv::Scalar(255, 0, 0), 3);
+      switch(target.rejectCode){
+      case REJECT_SIZE:   // reject size WHITE
+        cv::polylines(vis, target.points, true, cv::Scalar(255, 0, 0), 3);
+        break;
+      case REJECT_SHAPE:   // reject shape PURPLE
+        cv::polylines(vis, target.points, true, cv::Scalar(211, 7, 247), 3);
+        break;
+      case REJECT_FULLNESS:   // reject fullness RED
+      default:
+        cv::polylines(vis, target.points, true, cv::Scalar(255, 0, 0), 3);
+      }
     }
   }
   LOGD("Creating vis costs %d ms", getTimeInterval(t));
@@ -184,8 +206,7 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
   glActiveTexture(GL_TEXTURE0);
   glBindTexture(GL_TEXTURE_2D, texOut);
   t = getTimeMs();
-  glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, w, h, GL_RGBA, GL_UNSIGNED_BYTE,
-                  vis.data);
+  glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, w, h, GL_RGBA, GL_UNSIGNED_BYTE, vis.data);
   LOGD("glTexSubImage2D() costs %d ms", getTimeInterval(t));
 
   return targets;
