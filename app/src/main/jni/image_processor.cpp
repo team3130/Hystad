@@ -28,7 +28,8 @@ struct TargetInfo {
   double centroid_y;
   double width;
   double height;
-  std::vector<cv::Point> points;
+  std::vector<cv::Point> points; //points go
+  cv::Rect boundingpoints;
   RejectCode rejectCode;
 };
 // =============================================================================================
@@ -63,45 +64,28 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
 
   t = getTimeMs();
   static cv::Mat contour_input;
+  cv::Rect boundingrect;
   contour_input = thresh.clone();
   std::vector<std::vector<cv::Point>> contours;
-  std::vector<cv::Point> convex_contour;
-  std::vector<cv::Point> poly;
   std::vector<TargetInfo> targets;
   std::vector<TargetInfo> rejected_targets;
-  cv::findContours(contour_input, contours, cv::RETR_EXTERNAL,
-                   cv::CHAIN_APPROX_TC89_KCOS);
+  cv::findContours(contour_input, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_TC89_KCOS);
   for (auto &contour : contours) {
-    //convex_contour.clear();
-    //cv::convexHull(contour, convex_contour, false);
-    poly.clear();
-    cv::approxPolyDP(contour, poly, 20, true);
-    if ( poly.size() <= 6 && poly.size() >= 3 && cv::isContourConvex(poly)) {
-      TargetInfo target;
-      target.rejectCode = NOT_REJECTED;
-      int min_x = std::numeric_limits<int>::max();
-      int max_x = std::numeric_limits<int>::min();
-      int min_y = std::numeric_limits<int>::max();
-      int max_y = std::numeric_limits<int>::min();
-      target.centroid_x = 0;
-      target.centroid_y = 0;
-      for (auto point : poly) {
-        if (point.x < min_x)
-          min_x = point.x;
-        if (point.x > max_x)
-          max_x = point.x;
-        if (point.y < min_y)
-          min_y = point.y;
-        if (point.y > max_y)
-          max_y = point.y;
-        target.centroid_x += point.x;
-        target.centroid_y += point.y;
-      }
-      target.centroid_x /= 4;
-      target.centroid_y /= 4;
-      target.width = max_x - min_x;
-      target.height = max_y - min_y;
-      target.points = poly;
+        TargetInfo target;
+        target.rejectCode = NOT_REJECTED;
+        target.points = contour;
+
+        boundingrect = boundingRect(contour);
+        target.boundingpoints = boundingrect;
+
+        // Finds the center points
+        target.centroid_x = boundingrect.x + (boundingrect.width / 2);
+        target.centroid_y = boundingrect.y + (boundingrect.height / 2);
+
+        //height and width of bounding rectangle
+        target.height = boundingrect.height;
+        target.width = boundingrect.width;
+
 
       // Filter based on size
       // Keep in mind width/height are in imager terms...
@@ -110,15 +94,14 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
       const double kMinTargetHeight = 8;        // 2016 target was: 10
       const double kMaxTargetHeight = 100;      // 2016 target was: 100
       if (target.width < kMinTargetWidth || target.width > kMaxTargetWidth ||
-          target.height < kMinTargetHeight ||
-          target.height > kMaxTargetHeight) {
+          target.height < kMinTargetHeight || target.height > kMaxTargetHeight) {
         LOGD("Rejecting target due to size");
         target.rejectCode = REJECT_SIZE;
         rejected_targets.push_back(std::move(target));
         continue;
       }
       // Filter based on shape
-      const double kNearlyHorizontalSlope = 1 / 1.25;
+      /*const double kNearlyHorizontalSlope = 1 / 1.25;
       const double kNearlyVerticalSlope = 1.0;     // was 1.25
       int num_nearly_horizontal_slope = 0;
       int num_nearly_vertical_slope = 0;
@@ -147,26 +130,12 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
         target.rejectCode = REJECT_SHAPE;
         rejected_targets.push_back(std::move(target));
         continue;
-      }
-      /*
-      // Filter based on fullness
-      const double kMinFullness = .2; // 2016 value: .2
-      const double kMaxFullness = .5; // 2016 value: .5
-      double original_contour_area = cv::contourArea(contour);
-      double poly_area = cv::contourArea(poly);
-      double fullness = original_contour_area / poly_area;
-      if (fullness < kMinFullness || fullness > kMaxFullness) {
-        LOGD("Rejected target due to fullness");
-        target.rejectCode = REJECT_FULLNESS;
-        rejected_targets.push_back(std::move(target));
-        continue;
-      }
-        */
+      }*/
+
+
       // We found a target
-      LOGD("Found target at %.2lf, %.2lf...size %.2lf, %.2lf",
-           target.centroid_x, target.centroid_y, target.width, target.height);
+      LOGD("Found target at %.2lf, %.2lf...size %.2lf, %.2lf", target.centroid_x, target.centroid_y, target.width, target.height);
       targets.push_back(std::move(target));
-    }
   }
   LOGD("Contour analysis costs %d ms", getTimeInterval(t));
 
@@ -182,8 +151,9 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
     // Render the targets in Errors 3130 color
     for (auto &target : targets) {
       cv::polylines(vis, target.points, true, cv::Scalar(247, 211, 7), 3);
-      cv::circle(vis, cv::Point(target.centroid_x, target.centroid_y), 5,
-                 cv::Scalar(247, 211, 7), 3);
+      cv::circle(vis, cv::Point(target.centroid_x, target.centroid_y), 5, cv::Scalar(247, 211, 7), 3);
+      cv::rectangle( vis, target.boundingpoints, cv::Scalar(255, 0, 0), 2, 8, 0 );
+
     }
   }
   if (mode == DISP_MODE_TARGETS_PLUS) {
@@ -191,13 +161,16 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
       switch(target.rejectCode){
       case REJECT_SIZE:   // reject size WHITE
         cv::polylines(vis, target.points, true, cv::Scalar(255, 0, 0), 3);
+        cv::rectangle( vis, target.boundingpoints, cv::Scalar(255, 0, 0), 2, 8, 0 );
         break;
       case REJECT_SHAPE:   // reject shape PURPLE
         cv::polylines(vis, target.points, true, cv::Scalar(211, 7, 247), 3);
+        cv::rectangle( vis, target.boundingpoints, cv::Scalar(255, 0, 0), 2, 8, 0 );
         break;
       case REJECT_FULLNESS:   // reject fullness RED
       default:
         cv::polylines(vis, target.points, true, cv::Scalar(255, 0, 0), 3);
+        cv::rectangle( vis, target.boundingpoints, cv::Scalar(255, 0, 0), 2, 8, 0 );
       }
     }
   }
@@ -233,8 +206,7 @@ static void ensureJniRegistered(JNIEnv *env) {
   sTargetsField = env->GetFieldID(
       targetsInfoClass, "targets",
       "[Lcom/team3130/vision3130/NativePart$TargetsInfo$Target;");
-  jclass targetClass =
-      env->FindClass("com/team3130/vision3130/NativePart$TargetsInfo$Target");
+  jclass targetClass = env->FindClass("com/team3130/vision3130/NativePart$TargetsInfo$Target");
 
   sCentroidXField = env->GetFieldID(targetClass, "centroidX", "D");
   sCentroidYField = env->GetFieldID(targetClass, "centroidY", "D");
@@ -256,7 +228,7 @@ extern "C" void processFrame(JNIEnv *env, int tex1, int tex2, int w, int h,
   }
   jobjectArray targetsArray = static_cast<jobjectArray>(
       env->GetObjectField(destTargetInfo, sTargetsField));
-  for (int i = 0; i < std::min(numTargets, 3); ++i) {
+  for (int i = 0; i < std::min(numTargets, 4); ++i) {
     jobject targetObject = env->GetObjectArrayElement(targetsArray, i);
     const auto &target = targets[i];
     env->SetDoubleField(targetObject, sCentroidXField, target.centroid_x);
