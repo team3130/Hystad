@@ -20,14 +20,14 @@ enum DisplayMode {
 enum RejectCode {
     NOT_REJECTED = 0,
     REJECT_SIZE = 1,
-    REJECT_SHAPE = 2,
-    REJECT_FULLNESS = 3
+    REJECT_GROUP = 2
 };
 struct TargetInfo {
   double centroid_x;
   double centroid_y;
   double width;
   double height;
+  int ID;
   std::vector<cv::Point> points; //points go
   cv::Rect boundingpoints;
   RejectCode rejectCode;
@@ -40,6 +40,8 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
   LOGD("H %d-%d S %d-%d V %d-%d", h_min, h_max, s_min, s_max, v_min, v_max);
   int64_t t;
   RejectCode rejectType = NOT_REJECTED;  // 0 no reject, 1 size, 2 shape, 3 fullness
+
+  static int target_id = 1;
 
   static cv::Mat input;
   input.create(h, w, CV_8UC4);
@@ -67,6 +69,7 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
   cv::Rect boundingrect;
   contour_input = thresh.clone();
   std::vector<std::vector<cv::Point>> contours;
+  std::vector<TargetInfo> final_target;
   std::vector<TargetInfo> targets;
   std::vector<TargetInfo> rejected_targets;
   cv::findContours(contour_input, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_TC89_KCOS);
@@ -74,6 +77,8 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
         TargetInfo target;
         target.rejectCode = NOT_REJECTED;
         target.points = contour;
+
+        target.ID = target_id++;
 
         boundingrect = boundingRect(contour);
         target.boundingpoints = boundingrect;
@@ -89,17 +94,18 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
 
       // Filter based on size
       // Keep in mind width/height are in imager terms...
-      const double kMinTargetWidth = 15;        // 2016 target was: 20
-      const double kMaxTargetWidth = 300;       // 2016 target was: 300
-      const double kMinTargetHeight = 8;        // 2016 target was: 10
-      const double kMaxTargetHeight = 100;      // 2016 target was: 100
+      const double kMinTargetWidth = 16;        // 2016 target was: 20
+      const double kMaxTargetWidth = 170;       // 2016 target was: 300
+      const double kMinTargetHeight = 5;        // 2016 target was: 10
+      const double kMaxTargetHeight = 52;      // 2016 target was: 100
       if (target.width < kMinTargetWidth || target.width > kMaxTargetWidth ||
           target.height < kMinTargetHeight || target.height > kMaxTargetHeight) {
-        LOGD("Rejecting target due to size");
+        LOGD("Rejecting ID %d due to size at x%.2lf, y%.2lf...size w%.2lf, h%.2lf", target.ID,  target.centroid_x, target.centroid_y, target.width, target.height);
         target.rejectCode = REJECT_SIZE;
         rejected_targets.push_back(std::move(target));
         continue;
       }
+
       // Filter based on shape
       /*const double kNearlyHorizontalSlope = 1 / 1.25;
       const double kNearlyVerticalSlope = 1.0;     // was 1.25
@@ -133,11 +139,57 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
       }*/
 
 
-      // We found a target
-      LOGD("Found target at %.2lf, %.2lf...size %.2lf, %.2lf", target.centroid_x, target.centroid_y, target.width, target.height);
+      // We found a target with acceptable size
+      LOGD("Found a target ID %d with acceptable size at x%.2lf, y%.2lf...size w%.2lf, h%.2lf", target.ID, target.centroid_x, target.centroid_y, target.width, target.height);
       targets.push_back(std::move(target));
   }
   LOGD("Contour analysis costs %d ms", getTimeInterval(t));
+
+  t = getTimeMs();
+  int final_id = 0;
+
+  for (auto &target1 : targets) {
+    for ( auto &target2 : targets) {
+        if (target1.ID == target2.ID){
+            continue;
+        }
+
+        //Check for vertical X centroid alignment
+        if (fabs(target1.centroid_x - target2.centroid_x) > target1.width/4) {
+            continue; //Not aligned vertically
+        }
+
+        //Check if target1 is above target2
+        if (target2.centroid_y > target1.centroid_y) {
+            continue; //target1 lower than target2
+        }
+
+        //Check ratios
+        double total_height = target1.height/2 + fabs(target1.centroid_y - target2.centroid_y) + target2.height/2 ;
+        double ratio = target1.height/total_height;
+        if (fabs(ratio - .4) > .15) {
+            LOGD("Skipping ID %d due to ratio %.2lf  at x%.2lf, y%.2lf...size w%.2lf, h%.2lf", target2.ID, ratio, target2.centroid_x, target2.centroid_y, target2.width, target2.height);
+            continue; //Ratio incorrect
+        }
+
+        final_target.push_back(std::move(target1));
+        final_id = target1.ID;
+        LOGD("***** Found a target1 ID %d with acceptable group2 ID %d at x%.2lf, y%.2lf...size w%.2lf, h%.2lf", target1.ID, target2.ID, target1.centroid_x, target1.centroid_y, target1.width, target1.height);
+        break;
+    }
+    if (final_id != 0) {
+        break;
+    }
+  }
+  for (auto &target : targets) {
+    if (target.ID == final_id) {
+        continue;
+    }
+    LOGD("Rejecting target ID %d due to group", target.ID );
+    target.rejectCode = REJECT_GROUP;
+    rejected_targets.push_back(std::move(target));
+  }
+  LOGD("Group analysis costs %d ms", getTimeInterval(t));
 
   // write back
   t = getTimeMs();
@@ -148,28 +200,27 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
     cv::cvtColor(thresh, vis, CV_GRAY2RGBA);
   } else {
     vis = input;
-    // Render the targets in Errors 3130 color
-    for (auto &target : targets) {
-      cv::polylines(vis, target.points, true, cv::Scalar(247, 211, 7), 3);
+    // Render the target in Errors 3130 color
+    for (auto &target : final_target) {
+      cv::polylines(vis, target.points, true, cv::Scalar(0, 72, 255), 2);
       cv::circle(vis, cv::Point(target.centroid_x, target.centroid_y), 5, cv::Scalar(247, 211, 7), 3);
-      cv::rectangle( vis, target.boundingpoints, cv::Scalar(255, 0, 0), 2, 8, 0 );
+      cv::rectangle( vis, target.boundingpoints, cv::Scalar(247, 211, 7), 2, 8, 0 );
 
     }
   }
   if (mode == DISP_MODE_TARGETS_PLUS) {
     for (auto &target : rejected_targets) {
       switch(target.rejectCode){
-      case REJECT_SIZE:   // reject size WHITE
-        cv::polylines(vis, target.points, true, cv::Scalar(255, 0, 0), 3);
+      case REJECT_SIZE:   // reject size RED
+        cv::polylines(vis, target.points, true, cv::Scalar(0, 72, 255), 2);
         cv::rectangle( vis, target.boundingpoints, cv::Scalar(255, 0, 0), 2, 8, 0 );
         break;
-      case REJECT_SHAPE:   // reject shape PURPLE
-        cv::polylines(vis, target.points, true, cv::Scalar(211, 7, 247), 3);
-        cv::rectangle( vis, target.boundingpoints, cv::Scalar(255, 0, 0), 2, 8, 0 );
+      case REJECT_GROUP:   // reject shape PURPLE
+        cv::polylines(vis, target.points, true, cv::Scalar(0, 72, 255), 2);
+        cv::rectangle( vis, target.boundingpoints, cv::Scalar(203, 0, 255), 2, 8, 0 );
         break;
-      case REJECT_FULLNESS:   // reject fullness RED
       default:
-        cv::polylines(vis, target.points, true, cv::Scalar(255, 0, 0), 3);
+        cv::polylines(vis, target.points, true, cv::Scalar(0, 72, 255), 2);
         cv::rectangle( vis, target.boundingpoints, cv::Scalar(255, 0, 0), 2, 8, 0 );
       }
     }
@@ -182,7 +233,7 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
   glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, w, h, GL_RGBA, GL_UNSIGNED_BYTE, vis.data);
   LOGD("glTexSubImage2D() costs %d ms", getTimeInterval(t));
 
-  return targets;
+  return final_target;
 }
 
 static bool sFieldsRegistered = false;

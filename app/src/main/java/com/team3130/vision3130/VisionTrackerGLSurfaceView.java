@@ -147,7 +147,7 @@ public class VisionTrackerGLSurfaceView extends BetterCameraGLSurfaceView implem
         if (mRobotConnection != null) {
             TargetUpdateMessage update = new TargetUpdateMessage(visionUpdate, System.nanoTime());
             mRobotConnection.send(update);
-            // todo:  send a debug data message back for logging on roboRIO.
+
         }
         return true;
     }
