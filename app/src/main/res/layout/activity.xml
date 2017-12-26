@@ -10,55 +10,75 @@
         android:id="@+id/my_gl_surface_view" />
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <View
+            android:id="@+id/connectionState"
             android:layout_width="fill_parent"
             android:layout_height="25dp"
-            android:background="@android:color/holo_red_light"
-            android:id="@+id/connectionState" />
+            android:background="@android:color/holo_red_light" />
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="horizontal"
             android:paddingTop="5dp">
 
+            <ImageView
+                android:id="@+id/chargingIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:src="@android:drawable/ic_lock_idle_charging" />
+
+            <TextView
+                android:id="@+id/battery_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="\?\?%"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
             <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation = "vertical" >
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:id="@+id/fps_text_view"
-                    android:text="FPS:" />
-                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="FPS:" />
+
+                <TextView
                     android:id="@+id/proc_mode_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="Processing mode:" />
 
                 <View
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
-                    />
+                    android:layout_weight="1" />
 
 
                 <ImageButton
+                    android:id="@+id/lockButton"
                     android:layout_width="60dp"
                     android:layout_height="50dp"
-                    android:text="Show view options"
-                    android:id="@+id/lockButton"
-                    android:src="@drawable/locked"
-                    android:background="@android:color/transparent"
-                    android:layout_weight=".1"
-                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="10dp"
                     android:layout_marginLeft="60dp"
-                    android:layout_marginBottom="10dp" />
+                    android:layout_weight=".1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/locked"
+                    android:text="Show view options" />
 
             </LinearLayout>
 
@@ -66,62 +86,42 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"
-                />
+                android:layout_weight="1" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:id="@+id/chargingIcon"
-                android:src="@android:drawable/ic_lock_idle_charging"
-                android:paddingTop="5dp"
-                android:paddingRight="5dp" />
-
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="\?\?%"
-                    android:gravity="top"
-                    android:id="@+id/battery_text"
-                    android:layout_gravity="top"
-                    android:paddingTop="5dp"
-                    android:paddingRight="5dp" />
-
-            <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:paddingTop="7dp"
-                    android:layout_marginLeft="-20dp"
-                    android:src="@drawable/battery"/>
+                android:layout_marginLeft="-20dp"
+                android:paddingTop="7dp"
+                android:src="@drawable/battery" />
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="Show view options"
                 android:id="@+id/viewSelectButton"
-                android:layout_gravity="right"
-                android:onClick="showViewOptions"
-                android:src="@android:drawable/ic_menu_view"
-                android:background="@android:color/transparent"
-                android:paddingBottom="10dp"
-                android:paddingRight="5dp"
-                android:layout_weight=".05" />
-
-            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:text="Edit HSV"
-                android:id="@+id/hsvEditButton"
-                android:onClick="openBottomSheet"
-                android:src="@android:drawable/ic_menu_manage"
-                android:background="@android:color/transparent"
                 android:layout_gravity="right"
+                android:layout_weight=".05"
+                android:background="@android:color/transparent"
+                android:onClick="showViewOptions"
                 android:paddingBottom="10dp"
                 android:paddingRight="5dp"
-                android:layout_marginRight="10dp"
+                android:src="@android:drawable/ic_menu_view"
+                android:text="Show view options" />
+
+            <ImageButton
+                android:id="@+id/hsvEditButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
                 android:layout_marginLeft="5dp"
-                android:layout_weight=".05" />
+                android:layout_marginRight="10dp"
+                android:layout_weight=".05"
+                android:background="@android:color/transparent"
+                android:onClick="openBottomSheet"
+                android:paddingBottom="10dp"
+                android:paddingRight="5dp"
+                android:src="@android:drawable/ic_menu_manage"
+                android:text="Edit HSV" />
         </LinearLayout>
     </LinearLayout>
 

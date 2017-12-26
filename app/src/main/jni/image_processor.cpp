@@ -39,7 +39,7 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
   LOGD("Image is %d x %d", w, h);
   LOGD("H %d-%d S %d-%d V %d-%d", h_min, h_max, s_min, s_max, v_min, v_max);
   int64_t t;
-  RejectCode rejectType = NOT_REJECTED;  // 0 no reject, 1 size, 2 shape, 3 fullness
+  RejectCode rejectType = NOT_REJECTED;  // 0 no reject, 1 size, 2 group
 
   static int target_id = 1;
 
@@ -167,7 +167,7 @@ std::vector<TargetInfo> processImpl(int w, int h, int texOut, DisplayMode mode,
         //Check ratios
         double total_height = target1.height/2 + fabs(target1.centroid_y - target2.centroid_y) + target2.height/2 ;
         double ratio = target1.height/total_height;
-        if (fabs(ratio - .4) > .15) {
+        if (fabs(ratio - .4) > .18) {
             LOGD("Skipping ID %d due to ratio %.2lf  at x%.2lf, y%.2lf...size w%.2lf, h%.2lf", target2.ID, ratio, target2.centroid_x, target2.centroid_y, target2.width, target2.height);
             continue; //Ratio incorrect
         }
